@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="590d2ea3-1283-4ad4-b818-95f6e1ffb04c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm/migrations/0015_auto_20180717_2118.py" afterDir="false" />
-    </list>
+    <list default="true" id="590d2ea3-1283-4ad4-b818-95f6e1ffb04c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -527,7 +524,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32795697" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50064266" side_tool="true" weight="0.39112905" />
@@ -536,7 +532,7 @@
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49945235" weight="0.3172043" />
       <window_info anchor="bottom" x="705" y="436" width="868" height="418" id="Run" order="2" weight="0.27371272" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32384825" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3469388" visible="true" weight="0.15616967" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3469388" visible="true" weight="0.15616967" />
       <window_info anchor="bottom" id="manage.py@PerfectCRM" order="12" weight="0.41318977" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32969153" />
