@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'king_admin',
     'app02',
     'pure_pagination',
+    'student',
+    'teacher',
+
 ]
 
 PAGINATION_SETTINGS = {
@@ -95,7 +98,6 @@ DATABASES = {
     }
 }
 
-
 AUTH_USER_MODEL = 'crm.UserProfile'
 
 # Password validation
@@ -129,11 +131,8 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
@@ -142,3 +141,11 @@ STATICFILES_DIRS=[
 ]
 
 LOGIN_URL = '/crm/login/'
+
+ORM_PATH_DIR = os.path.join(BASE_DIR,'crm/upload_files/enrollment_data/')
+
+STUDENT_HOWEWORK_DIR = os.path.join(BASE_DIR,'student/upload_files/homework_data/')
+
+
+
+

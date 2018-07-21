@@ -27,7 +27,6 @@ class AdminSite(object):
 
         self.enable_admins[app_name][model_name] = admin_class
 
-
 # 实例化，就可以调用register方法
 site = AdminSite()
 

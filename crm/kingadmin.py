@@ -36,6 +36,7 @@ site.register(models.StudyRecord)
 site.register(models.Branch)
 site.register(models.StudentEnrollment)
 site.register(models.ContractTemplate)
+site.register(models.Menu)
 print('注册结束')
 
 

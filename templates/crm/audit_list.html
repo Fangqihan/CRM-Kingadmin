@@ -1,0 +1,58 @@
+{% extends 'crm/dashboard.html' %}
+{% load staticfiles %}
+{% load crm_tags %}
+
+{% block custom_css %}
+<style>
+label{
+    color: grey;
+}
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-primary">
+
+                <div class="panel-heading" style="font-size: 20px">Google_IT | 待审核学员</div>
+
+                <div class="panel-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                               <td>学号</td>
+                               <td >姓名</td>
+                               <td >班级</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {% for stu in audit_stu_list %}
+                            <tr>
+                                <td><a href="{% url 'audit' stu.id %}">{{ stu.id }}</a></td>
+                                <td>{{ stu.customer.name }}</td>
+                                <td>{{ stu.class_grade }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+
+
+
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+

@@ -1,0 +1,51 @@
+{% extends 'crm/dashboard.html' %}
+{% load staticfiles %}
+{% load crm_tags %}
+
+{% block custom_css %}
+<style>
+label{
+    color: grey;
+}
+.form-group{
+    margin-bottom: 30px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading" style="font-size: 20px">Google_IT | 审核学员</div>
+                <div class="panel-body">
+                    <form method="post">
+                        {% csrf_token %}
+                        {% for input_obj in student_enroll_form %}
+                            <div class="form-group">
+                            {# 每行两列，则每列列宽为md-6 #}
+                                <label for="inputEmail3" class="col-sm-2 control-label">{{ input_obj.label }}</label>
+                                <div class="col-sm-10">
+                                    {{ input_obj }}
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <input class="btn btn-success btn-block" type="submit" value="审核通过">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+

@@ -2,12 +2,10 @@ from django.template import Library
 
 register = Library()
 
-import re
+@register.simple_tag
+def replace_str(s):
+    return str(s).replace('.','_')
 
-@register.filter
-def compare(value,pattern):
-    if re.fullmatch(pattern,value):
-        return True
-    return False
+
 
 

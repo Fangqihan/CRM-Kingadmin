@@ -13,7 +13,7 @@ td{
 {% endblock %}
 
 {% block body %}
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top header">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
@@ -44,26 +44,14 @@ td{
     <div class="container-fluid">
       <div class="row">
 
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-                {% for role in request.user.role.select_related %}
-                    {% for menu in role.menu.select_related %}
-                        <li><a href="{% if menu.url_type == 0 %}{{ menu.url_name }}{% else %}{% url menu.url_name %}{% endif %}">{{ menu.name }}</a></li>
-                    {% endfor %}
-                {% endfor %}
-            </ul>
-        </div>
-
-        <div class="col-sm-9 col-sm-offset-3 col-md-6 col-md-offset-2 main">
+        <div class="col-sm-9 col-md-8 main">
             {% for app_name,app_tables in enabled_admins.items %}
                 <table class="table table-striped">
                     <thead>
-                       <thead>
                         <tr>
                             <th style="background: #2e6da4;color: white;font-size: 20px" colspan="2">
-                                <a href="{% url 'kingadmin_app_page' app_name %}" style="color: whitesmoke">{{ app_name }}</a></th>
+                            <a href="{% url 'kingadmin_app_page' app_name %}" style="color: whitesmoke">{{ app_name }}</a></th>
                         </tr>
-                </thead>
                     </thead>
 
                     <tbody>

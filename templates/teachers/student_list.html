@@ -1,0 +1,42 @@
+{% extends 'teachers/class_list.html' %}
+
+
+{% block title %}
+    <title>班级学生列表</title>
+{% endblock %}
+
+
+{% block content %}
+    <div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3>学生列表</h3>
+    </div>
+    <div class="panel-body" style="">
+        {#  导航栏 #}
+        <div class="row">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>学号</td>
+                        <td>姓名</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for stu in student_list %}
+                    <tr>
+                        <td><a href="{% url 'homework_list' stu.id %}">{{ stu.customer.id }}</a></td>
+                        <td><a>{{ stu.customer.name }}</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+         </div><!--/row-->
+    </div>
+</div>
+{% endblock %}
+
+
+
+

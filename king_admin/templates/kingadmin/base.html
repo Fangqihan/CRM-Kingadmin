@@ -19,7 +19,7 @@
     <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
     <style>
         .navbar-header{
-            width: 200px;
+            width: 500px;
         }
         .main{
             {#margin-left: 100px;#}
@@ -31,10 +31,31 @@
         tbody a{
             color: gray;
         }
+       .navbar-inverse .navbar-nav>li>a {
+           color: #f8f8f8;
+           font-size: 16px;
+        }
+        .navbar-inverse .navbar-brand {
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .sidebar{
+            background: #2C2C2C;
+        }
+        .sidebar a:link,.sidebar a:active,.sidebar a:hover{
+            color: whitesmoke;
+            font-size: 16px;
+        }
+        .nav>li>a:focus, .nav>li>a:hover {
+            text-decoration: none;
+            background-color: #337ab7;
+        }
+
     </style>
+
     <script src="{% static 'js/ie-emulation-modes-warning.js' %}"></script>
     {% block custom_css %}{% endblock %}
-
 </head>
 <body>
 

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+{% load static %}
+{% load student_tag %}
+<!-- saved from url=(0042)https://v3.bootcss.com/examples/offcanvas/ -->
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://v3.bootcss.com/favicon.ico">
+    {% block title %}
+        <title>班级管理</title>
+    {% endblock %}
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/ie10-viewport-bug-workaround.css' %}" rel="stylesheet">
+    <link href="{% static 'css/offcanvas.css' %}" rel="stylesheet">
+    <script src={% static 'js/ie-emulation-modes-warning.js' %}></script><style type="text/css" abt="234"></style>
+    <link rel="stylesheet" href="{% static 'css/dropzone.css' %}">
+    <style>
+      .navbar-header{
+            width: 500px;
+        }
+        tbody{
+            color: gray;
+        }
+        tbody a{
+            color: gray;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: #f8f8f8;
+            font-size: 16px;
+        }
+        .navbar-inverse .navbar-brand {
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        a:hover,a:link{
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+    {% block custom_css %}
+        <style>
+        </style>
+    {% endblock %}
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                  aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://v3.bootcss.com/examples/dashboard/#" style="padding-left: 10%;
+          display: inline-block">班级管理</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              {% if request.user.is_authenticated %}
+                <li><a href="">{{ request.user }}</a></li>
+                <li><a href="{% url 'crm_logout' %}">退出登录</a></li>
+              {% else %}
+                <li><a href="{% url 'crm_login' %}">登录</a></li>
+                <li><a href="{% url 'crm_register' %}">注册</a></li>
+              {% endif %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  <div class="container">
+        <div class="row row-offcanvas row-offcanvas-right">
+            <div class="col-xs-12 col-sm-9">
+                <p class="pull-right visible-xs">
+                    <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+                </p>
+
+                {% block content %}
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3>我的班级</h3>
+                    </div>
+                    <div class="panel-body" style="">
+                        {#  导航栏 #}
+                        <div class="row">
+                            <table class="table table-striped">
+
+                                <tbody>
+                                    {% for class_grade in class_list %}
+                                    <tr>
+                                        <td><a href="{% url 'student_list' class_grade.id %}">{{ class_grade }}</a></td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+
+                            </table>
+                         </div><!--/row-->
+                    </div>
+            </div>
+                {% endblock %}
+
+        <hr>
+
+        <footer>
+            <p>© Company 2014</p>
+        </footer>
+
+    </div><!--/.container-->
+  </div>
+</div>
+
+</body>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+<script src="{% static 'js/offcanvas.js' %}"></script>
+{% block custome_js %}{% endblock %}
+
+</html>
+
+

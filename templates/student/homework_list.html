@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+{% load static %}
+{% load student_tag %}
+<!-- saved from url=(0042)https://v3.bootcss.com/examples/offcanvas/ -->
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://v3.bootcss.com/favicon.ico">
+    {% block title %}
+        <title>作业记录</title>
+    {% endblock %}
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/ie10-viewport-bug-workaround.css' %}" rel="stylesheet">
+    <link href="{% static 'css/offcanvas.css' %}" rel="stylesheet">
+    <script src={% static 'js/ie-emulation-modes-warning.js' %}></script><style type="text/css" abt="234"></style>
+    <link rel="stylesheet" href="{% static 'css/dropzone.css' %}">
+    <style>
+      .navbar-header{
+            width: 500px;
+        }
+        tbody{
+            color: gray;
+        }
+        tbody a{
+            color: gray;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: #f8f8f8;
+            font-size: 16px;
+        }
+        .navbar-inverse .navbar-brand {
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .sidebar{
+        background: #2C2C2C;
+        }
+        .sidebar a:link,.sidebar a:active,.sidebar a:hover{
+            color: whitesmoke;
+            font-size: 16px;
+        }
+        .nav>li>a:focus, .nav>li>a:hover {
+            text-decoration: none;
+            background-color: #337ab7;
+        }
+        .dropzone {
+        border: 2px dashed #0087F7;
+        border-radius: 5px;
+        background: white;
+        min-height: 150px;
+        padding: 54px 54px;
+    }
+    </style>
+
+{% block custom_css %}
+    <style>
+     .dropzone {
+        border: 2px dashed #0087F7;
+        border-radius: 5px;
+        background: white;
+        min-height: 150px;
+        padding: 54px 54px;
+     }
+        h4{
+         font-weight: 600;
+        }
+
+        .col-lg-4 {
+            width: 30%;
+            background: white;
+            border-radius: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-left: 10px
+        }
+        .desc{
+            {#margin-left: 10%;#}
+            float: right;
+        }
+
+</style>
+{% endblock %}
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                  aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            {% block nav_title %}
+          <a class="navbar-brand" href="https://v3.bootcss.com/examples/dashboard/#" style="padding-left: 10%;
+          display: inline-block">学生作业管理</a>
+            {% endblock %}
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              {% if request.user.is_authenticated %}
+                <li><a href="">{{ request.user }}</a></li>
+                <li><a href="{% url 'crm_logout' %}">退出登录</a></li>
+              {% else %}
+                <li><a href="{% url 'crm_login' %}">登录</a></li>
+                <li><a href="{% url 'crm_register' %}">注册</a></li>
+              {% endif %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <div class="container">
+        <div class="row row-offcanvas row-offcanvas-right">
+            <div class="col-xs-12 col-sm-9">
+                <p class="pull-right visible-xs">
+                    <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+                </p>
+
+            {% block content %}
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3>我的作业</h3>
+                    </div>
+                    <div class="panel-body" style="">
+                        {#  导航栏 #}
+                        <div class="row">
+                            {% for record in homework_record_list %}
+                            <div class="col-lg-4" style="box-shadow: 0 2px 4px 0 #d0d0d0;">
+                                <h4>{{ record.homework.title }}</h4>
+                                <p class="">状态：<span style="color: {% ifequal record.status 0 %}red{% else %}#84CC39{% endifequal %}">
+                                    {{ record.get_status_display }}</span></p>
+                                <p class="">得分：<span style="color: #84CC39">{{ record.score }}分</span></p>
+                                <p class="">截止日期：<span>{% get_date record.homework.publish_date record.homework.suggested_complete_days %}</span></p>
+                                <p>学员：<span style="color: #adadad">{{ record.student.student.customer.name }}</span></p>
+                                <p class="desc"><a class="btn btn-success" href="{% url 'homework_detail' record.id %}"
+                                      role="button">详细信息 »</a></p>
+                            </div><!--/.col-xs-6.col-lg-4-->
+                            {% endfor %}
+                         </div><!--/row-->
+                    </div>
+            </div>
+            {% endblock %}
+        <hr>
+        <footer>
+            <p>© Company 2014</p>
+        </footer>
+
+    </div><!--/.container-->
+  </div>
+</div>
+
+</body>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+<script src="{% static 'js/offcanvas.js' %}"></script>
+{% block custome_js %}{% endblock %}
+
+</html>
+
+

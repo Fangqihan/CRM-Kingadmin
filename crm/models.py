@@ -32,23 +32,23 @@ class Role(models.Model):
 
 class CustomerInfo(models.Model):
     """客户信息表"""
-    name = models.CharField(max_length=64, default=None,verbose_name='姓名')
-    gender = models.IntegerField(choices=((0,'男'),(1,'女')),null=True,blank=True,verbose_name='性别')
-    age = models.IntegerField(blank=True,null=True,verbose_name='年龄')
-    id_num = models.CharField(max_length=32,blank=True,null=True,verbose_name='身份证号码')
+    name = models.CharField(max_length=64, default=None, verbose_name='姓名')
+    gender = models.IntegerField(choices=((0, '男'), (1, '女')), null=True, blank=True, verbose_name='性别')
+    age = models.IntegerField(blank=True, null=True, verbose_name='年龄')
+    id_num = models.CharField(max_length=32, blank=True, null=True, verbose_name='身份证号码')
     contact_type_choices = ((0, 'QQ'), (1, '微信'), (2, '手机'))
     contact_type = models.IntegerField(choices=contact_type_choices, default=0, verbose_name='联系方式')
-    contact_info = models.CharField(max_length=64, unique=True,verbose_name='联系电话')
-    emergency_contact = models.CharField(max_length=20,null=True,blank=True,verbose_name='紧急电话')
+    contact_info = models.CharField(max_length=64, unique=True, verbose_name='联系电话')
+    emergency_contact = models.CharField(max_length=20, null=True, blank=True, verbose_name='紧急电话')
     consult_course = models.ManyToManyField('Course', verbose_name='咨询课程')
     consult_content = models.TextField(verbose_name='咨询大致内容')
     consultant = models.ForeignKey('UserProfile', verbose_name='课程顾问')
     status_choice = ((0, '未报名'), (1, '已报名'), (2, '已退学'))
-    status = models.SmallIntegerField(choices=status_choice, default=0,verbose_name='状态')
+    status = models.SmallIntegerField(choices=status_choice, default=0, verbose_name='状态')
     source_choices = ((0, 'QQ群'), (1, '51CTO'), (2, '知乎'), (3, '转介绍'), (4, '百度推广'), (5, '其他'))
-    source = models.SmallIntegerField(choices=source_choices,verbose_name='来源')
+    source = models.SmallIntegerField(choices=source_choices, verbose_name='来源')
     referral_from = models.ForeignKey('self', blank=True, null=True, verbose_name='转介绍人')
-    date = models.DateField(auto_now_add=True,verbose_name='创建时间')
+    date = models.DateField(auto_now_add=True, verbose_name='创建时间')
 
     def __str__(self):
         return self.name
@@ -98,9 +98,9 @@ class ClassList(models.Model):
     branch = models.ForeignKey('Branch', verbose_name='校区')
     course = models.ForeignKey('Course')
     semester = models.SmallIntegerField(verbose_name='学期')
-    teachers = models.ManyToManyField('UserProfile')
-    start_date = models.DateField(verbose_name='开班日期',auto_now_add=True)
-    contract_tempalte = models.ForeignKey('ContractTemplate',blank=True,null=True,verbose_name='关联合同模板')
+    teacher = models.ForeignKey('UserProfile',null=True,blank=True)
+    start_date = models.DateField(verbose_name='开班日期', auto_now_add=True)
+    contract_tempalte = models.ForeignKey('ContractTemplate', blank=True, null=True, verbose_name='关联合同模板')
     graduate_date = models.DateField(verbose_name='毕业日期', blank=True, null=True)
     class_type_choices = (
         (0, '脱产'),
@@ -138,62 +138,6 @@ class CourseRecord(models.Model):
         verbose_name = '课程记录'
         verbose_name_plural = verbose_name
         db_table = '课程记录'
-
-
-class Student(models.Model):
-    """学生"""
-    customer = models.OneToOneField('CustomerInfo')
-    # 一个学生可以报名多个班
-    class_grade = models.ManyToManyField('ClassList')
-
-    class Meta:
-        verbose_name = '学生'
-        verbose_name_plural = verbose_name
-        db_table = '学生'
-
-    def __str__(self):
-        return self.customer.name
-
-
-class StudyRecord(models.Model):
-    """学习记录表"""
-    course_record = models.ForeignKey('CourseRecord')
-    student = models.ForeignKey('Student')
-    score_choices = (
-        (100, 'A+'),
-        (90, 'A'),
-        (85, 'B+'),
-        (80, 'B'),
-        (75, 'B-'),
-        (70, 'C+'),
-        (60, 'C'),
-        (40, 'C-'),
-        (-50, 'D'),
-        (0, 'N/A'),
-        (-100, 'COPY'),
-    )
-    score = models.SmallIntegerField(choices=score_choices, default=0,
-                                     verbose_name='成绩')
-
-    show_choices = (
-        (0, '缺勤'),
-        (1, '已签到'),
-        (0, '迟到'),
-        (0, '早退'),
-    )
-    show_status = models.SmallIntegerField(choices=show_choices, default=1,
-                                           verbose_name='考勤状态')
-    note = models.TextField(verbose_name='成绩备注', blank=True, null=True)
-    date = models.DateField(auto_now_add=True)
-
-    def __str__(self):
-        return "%s %s %s" % (self.course_record, self.student, self.score)
-
-    class Meta:
-        verbose_name = '学习记录'
-        verbose_name_plural = verbose_name
-        db_table = '学习记录'
-
 
 class Branch(models.Model):
     """校区"""
@@ -239,7 +183,7 @@ class ContractTemplate(models.Model):
         return self.name
 
     class Meta:
-        db_table='合同'
+        db_table = '合同'
 
 
 class StudentEnrollment(models.Model):
@@ -247,17 +191,17 @@ class StudentEnrollment(models.Model):
     customer = models.ForeignKey('CustomerInfo')
     consultant = models.ForeignKey('UserProfile')
     class_grade = models.ForeignKey('ClassList')
-    contract_agreed = models.BooleanField(default=False)
-    contract_signed_time = models.DateTimeField(blank=True,null=True,verbose_name='合同签订时间')
-    contract_approved = models.BooleanField(default=False)
-    contract_approved_time = models.DateTimeField(blank=True,null=True,verbose_name='合同审核时间')
+    contract_agreed = models.BooleanField(default=False, verbose_name='同意条款')
+    contract_signed_time = models.DateTimeField(blank=True, null=True, verbose_name='合同签订时间')
+    contract_approved = models.BooleanField(default=False, verbose_name='审核通过')
+    contract_approved_time = models.DateTimeField(blank=True, null=True, verbose_name='合同审核时间')
 
     def __str__(self):
         return '%s' % self.customer.name
 
     class Meta:
         unique_together = ['customer', 'class_grade']
-        db_table='学生报名'
+        db_table = '学生报名'
 
 
 class PaymentRecord(models.Model):
@@ -265,7 +209,7 @@ class PaymentRecord(models.Model):
     enrollment = models.ForeignKey('StudentEnrollment')
     pay_amount = models.IntegerField(default=500)
     consultant = models.ForeignKey('CustomerInfo')
-    payment_type_choices = ((0,'报名费'),(1,'学费'),(2,'退费'))
+    payment_type_choices = ((0, '报名费'), (1, '学费'), (2, '退费'))
     payment_type = models.IntegerField(choices=payment_type_choices)
     date = models.DateTimeField(auto_now_add=True)
 
@@ -273,9 +217,60 @@ class PaymentRecord(models.Model):
         return '%s' % self.enrollment
 
     class Meta:
-        db_table='缴费记录'
+        db_table = '缴费记录'
 
 
+class Student(models.Model):
+    """学生"""
+    student = models.ForeignKey('StudentEnrollment')  #　只有走完报名流程才会成为正式学员
+    user_account = models.OneToOneField('UserProfile')  # 创建用户
 
+    class Meta:
+        verbose_name = '学生'
+        verbose_name_plural = verbose_name
+        db_table = '学生'
+
+    def __str__(self):
+        return self.student.customer.name
+
+
+class StudyRecord(models.Model):
+    """学习记录表"""
+    course_record = models.ForeignKey('CourseRecord')
+    student = models.ForeignKey('Student')
+    score_choices = (
+        (100, 'A+'),
+        (90, 'A'),
+        (85, 'B+'),
+        (80, 'B'),
+        (75, 'B-'),
+        (70, 'C+'),
+        (60, 'C'),
+        (40, 'C-'),
+        (-50, 'D'),
+        (0, 'N/A'),
+        (-100, 'COPY'),
+    )
+    score = models.SmallIntegerField(choices=score_choices, default=0,
+                                     verbose_name='成绩')
+
+    show_choices = (
+        (0, '缺勤'),
+        (1, '已签到'),
+        (0, '迟到'),
+        (0, '早退'),
+    )
+    show_status = models.SmallIntegerField(choices=show_choices, default=1,
+                                           verbose_name='考勤状态')
+    note = models.TextField(verbose_name='成绩备注', blank=True, null=True)
+    date = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return "%s %s %s" % (self.course_record, self.student, self.score)
+
+    class Meta:
+        verbose_name = '学习记录'
+        verbose_name_plural = verbose_name
+        db_table = '学习记录'
 
 

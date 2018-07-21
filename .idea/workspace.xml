@@ -1,7 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="590d2ea3-1283-4ad4-b818-95f6e1ffb04c" name="Default" comment="" />
+    <list default="true" id="590d2ea3-1283-4ad4-b818-95f6e1ffb04c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0016_contracttemplate_class_grade.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0017_remove_contracttemplate_class_grade.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0018_auto_20180719_0023.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0019_auto_20180720_2302.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0020_auto_20180720_2309.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0021_auto_20180721_1328.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/dropzone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/offcanvas.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/dropzone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/offcanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/kingadmin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/migrations/0002_homeworkrecord.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/migrations/0003_auto_20180721_0928.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/migrations/0004_homeworkrecord_upload_time.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/migrations/0005_auto_20180721_1617.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/migrations/0006_auto_20180721_1640.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/templatetags/student_tag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/upload_files/homework_data/2/CRM_fqh1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teacher/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teacher/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teacher/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/crm/audit_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/crm/audit_student_enroll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/crm/complete_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/crm/student_enroll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/student/homework_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/student/homework_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/teachers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/teachers/class_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/teachers/homework_coment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/teachers/review_homework_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/teachers/student_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/teachers/students_homework_uploads.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PerfectCRM/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/PerfectCRM/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PerfectCRM/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/PerfectCRM/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/kingadmin.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/kingadmin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/templates/crm/complete_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/templates/crm/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crm/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/templates/crm/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crm/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/templates/crm/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crm/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/templates/crm/student_enroll.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/templatetags/crm_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/templatetags/crm_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/king_admin/sites.py" beforeDir="false" afterPath="$PROJECT_DIR$/king_admin/sites.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/king_admin/templates/kingadmin/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/king_admin/templates/kingadmin/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/king_admin/templates/kingadmin/change_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/king_admin/templates/kingadmin/change_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/king_admin/templates/kingadmin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/king_admin/templates/kingadmin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,112 +94,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crm/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kingadmin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crm/kingadmin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="change_info.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/king_admin/templates/kingadmin/change_info.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="112" selection-start-line="112" selection-end-line="112" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="my_tag.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/king_admin/templatetags/my_tag.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="40" column="117" selection-start-line="40" selection-start-column="117" selection-end-line="40" selection-end-column="117" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <element signature="e#234#955#0" />
-                <element signature="e#3369#3715#0" />
-                <element signature="e#3779#4116#0" />
-                <element signature="e#4200#4575#0" />
-                <element signature="e#4637#4861#0" />
-                <element signature="e#4933#5113#0" />
-                <element signature="e#5180#5377#0" />
-                <element signature="e#5432#5588#0" />
-                <element signature="e#5661#6175#0" />
-                <element signature="e#6266#6997#0" />
-                <element signature="e#7061#8934#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crm/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="98" column="37" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
+            <state relative-caret-position="180">
+              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding>
-                <element signature="e#0#57#0" expanded="true" />
+                <element signature="e#0#59#0" expanded="true" />
+                <element signature="e#389#868#0" />
+                <element signature="e#900#1289#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student_enroll.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crm/templates/crm/student_enroll.html">
+      <file leaf-file-name="homework_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/student/homework_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="complete_info.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crm/templates/crm/complete_info.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/crm/templates/crm/dashboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
               <folding>
-                <element signature="e#48#1172#0#HTML" />
+                <element signature="e#1969#3414#0#HTML" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crm_tags.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crm/templatetags/crm_tags.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/student/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="154">
+              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="re.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/crm_env/Lib/re.py">
+      <file leaf-file-name="homework_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/student/homework_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+            <state relative-caret-position="152">
+              <caret line="144" column="96" selection-start-line="144" selection-start-column="96" selection-end-line="144" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,30 +159,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>class=&quot;table&quot;</find>
-      <find>id_consult_course_input</find>
-      <find>col-sm-3 col-md-2 sidebar</find>
-      <find>.breadcrumb</find>
-      <find>Home</find>
-      <find>col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main</find>
-      <find>inverse</find>
-      <find>default</find>
-      <find>get_available_fields</find>
-      <find>class=&quot;breadcrumb&quot;</find>
-      <find>table table-hover</find>
-      <find>form-horizontal</find>
-      <find>href=&quot;/kingadmin/crm/customerinfo/add&quot;</find>
-      <find>客户信息</find>
-      <find>ADD</find>
-      <find>btn btn-default form_btn</find>
-      <find>table</find>
       <find>classlist</find>
       <find>bran</find>
       <find>crm_studentenrollment</find>
@@ -190,6 +179,23 @@
       <find>changelist-form</find>
       <find>filter_box</find>
       <find>text</find>
+      <find>student_info</find>
+      <find>student_enroll</find>
+      <find>contract</find>
+      <find>agree_contract</find>
+      <find>customer</find>
+      <find>navbar</find>
+      <find>breadcrumb</find>
+      <find>templa</find>
+      <find>myAwesomeDropzone</find>
+      <find>dropzone</find>
+      <find>CrmConfig</find>
+      <find>student</find>
+      <find>logout</find>
+      <find>status</find>
+      <find>class=&quot;panel panel-primary&quot;</find>
+      <find>container-fluid</find>
+      <find>upload_file_list</find>
     </findStrings>
     <replaceStrings>
       <replace>page_obj</replace>
@@ -202,57 +208,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/crm/register.html" />
-        <option value="$PROJECT_DIR$/templates/crm/login.html" />
-        <option value="$PROJECT_DIR$/templates/crm/dashboard.html" />
-        <option value="$PROJECT_DIR$/king_admin/templates/login.html" />
-        <option value="$PROJECT_DIR$/king_admin/templates/index.html" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/login.html" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/register.html" />
-        <option value="$PROJECT_DIR$/PerfectCRM/urls.py" />
-        <option value="$PROJECT_DIR$/crm/sites.py" />
-        <option value="$PROJECT_DIR$/app1/models.py" />
-        <option value="$PROJECT_DIR$/king_admin/tests.py" />
-        <option value="$PROJECT_DIR$/king_admin/app_setup.py" />
-        <option value="$PROJECT_DIR$/king_admin/templatetags/__init__.py" />
-        <option value="$PROJECT_DIR$/app02/models.py" />
-        <option value="$PROJECT_DIR$/app02/kingadmin.py" />
-        <option value="$PROJECT_DIR$/app02/admin.py" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/table_objects_list.html" />
-        <option value="$PROJECT_DIR$/king_admin/utils.py" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/add_obj.html" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/test.html" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/selelct_test.html" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/change_info_bakup.html" />
-        <option value="$PROJECT_DIR$/crm/admin.py" />
-        <option value="$PROJECT_DIR$/king_admin/base_king_admin.py" />
-        <option value="$PROJECT_DIR$/king_admin/sites.py" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/del_obj.html" />
-        <option value="$PROJECT_DIR$/king_admin/static/css/dashboard.css" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/index.html" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/base.html" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/app_page.html" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/student_enroll.html" />
-        <option value="$PROJECT_DIR$/king_admin/urls.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/PerfectCRM/settings.py" />
-        <option value="$PROJECT_DIR$/crm/templatetags.py" />
-        <option value="$PROJECT_DIR$/crm/templatetags/__init__.py" />
-        <option value="$PROJECT_DIR$/templates/crm/student_enroll.html" />
-        <option value="$PROJECT_DIR$/king_admin/views.py" />
-        <option value="$PROJECT_DIR$/crm/urls.py" />
-        <option value="$PROJECT_DIR$/crm/views.py" />
-        <option value="$PROJECT_DIR$/crm/forms.py" />
-        <option value="$PROJECT_DIR$/king_admin/form_handle.py" />
-        <option value="$PROJECT_DIR$/crm/kingadmin.py" />
-        <option value="$PROJECT_DIR$/king_admin/templatetags/my_tag.py" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/table_objects_list_1.html" />
-        <option value="$PROJECT_DIR$/crm/models.py" />
         <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/change_info.html" />
-        <option value="$PROJECT_DIR$/crm/templates/crm/complete_info.html" />
         <option value="$PROJECT_DIR$/crm/templates/crm/student_enroll.html" />
-        <option value="$PROJECT_DIR$/crm/templatetags/crm_tags.py" />
+        <option value="$PROJECT_DIR$/static/css/dropzone.html" />
+        <option value="$PROJECT_DIR$/static/css/dropzone.css" />
+        <option value="$PROJECT_DIR$/crm/templates/crm/audit_list.html" />
+        <option value="$PROJECT_DIR$/crm/templates/crm/audit_student_enroll.html" />
+        <option value="$PROJECT_DIR$/crm/forms.py" />
+        <option value="$PROJECT_DIR$/student/templates/students_home.html" />
+        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/base.html" />
+        <option value="$PROJECT_DIR$/student/templates/homework.html" />
+        <option value="$PROJECT_DIR$/king_admin/urls.py" />
+        <option value="$PROJECT_DIR$/king_admin/sites.py" />
+        <option value="$PROJECT_DIR$/student/admin.py" />
+        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/index.html" />
+        <option value="$PROJECT_DIR$/student/templates/homework_list.html" />
+        <option value="$PROJECT_DIR$/student/forms.py" />
+        <option value="$PROJECT_DIR$/student/templates/student/homework_list.html" />
         <option value="$PROJECT_DIR$/crm/templates/crm/dashboard.html" />
+        <option value="$PROJECT_DIR$/student/templates/student/homework_detail.html" />
+        <option value="$PROJECT_DIR$/crm/templates/crm/complete_info.html" />
+        <option value="$PROJECT_DIR$/crm/templatetags/crm_tags.py" />
+        <option value="$PROJECT_DIR$/student/templatetags/__init__.py" />
+        <option value="$PROJECT_DIR$/crm/urls.py" />
+        <option value="$PROJECT_DIR$/teacher/models.py" />
+        <option value="$PROJECT_DIR$/PerfectCRM/urls.py" />
+        <option value="$PROJECT_DIR$/templates/teachers/class_list.html" />
+        <option value="$PROJECT_DIR$/templates/crm/audit_list.html" />
+        <option value="$PROJECT_DIR$/student/urls.py" />
+        <option value="$PROJECT_DIR$/templates/teachers/student_list.html" />
+        <option value="$PROJECT_DIR$/crm/admin.py" />
+        <option value="$PROJECT_DIR$/crm/kingadmin.py" />
+        <option value="$PROJECT_DIR$/student/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/student/kingadmin.py" />
+        <option value="$PROJECT_DIR$/crm/models.py" />
+        <option value="$PROJECT_DIR$/templates/teachers/students_homework_uploads.html" />
+        <option value="$PROJECT_DIR$/PerfectCRM/settings.py" />
+        <option value="$PROJECT_DIR$/crm/views.py" />
+        <option value="$PROJECT_DIR$/teacher/urls.py" />
+        <option value="$PROJECT_DIR$/templates/teachers/homework_coment.html" />
+        <option value="$PROJECT_DIR$/teacher/forms.py" />
+        <option value="$PROJECT_DIR$/student/models.py" />
+        <option value="$PROJECT_DIR$/teacher/views.py" />
+        <option value="$PROJECT_DIR$/student/templatetags/student_tag.py" />
+        <option value="$PROJECT_DIR$/templates/teachers/review_homework_list.html" />
+        <option value="$PROJECT_DIR$/templates/student/homework_list.html" />
+        <option value="$PROJECT_DIR$/templates/crm/dashboard.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/student/homework_detail_1.html" />
+        <option value="$PROJECT_DIR$/templates/student/homework_list_1.html" />
+        <option value="$PROJECT_DIR$/templates/student/homework_detail.html" />
+        <option value="$PROJECT_DIR$/student/views.py" />
       </list>
     </option>
   </component>
@@ -265,11 +271,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="369" />
-    <option name="y" value="3" />
-    <option name="width" value="1239" />
-    <option name="height" value="856" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="width" value="1516" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -292,44 +296,17 @@
             <path>
               <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
               <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="crm" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
               <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="crm" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
               <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="crm" type="462c0819:PsiDirectoryNode" />
-              <item name="templatetags" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="king_admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="king_admin" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="king_admin" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="kingadmin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
+              <item name="teacher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
@@ -338,7 +315,19 @@
             </path>
             <path>
               <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="teachers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -349,27 +338,29 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="ToolWindowDebug.ShowToolbar" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Administrator/PycharmProjects/PerfectCRM/crm/forms.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="G:/老男孩/老男孩全栈3课件/day83 学员报名/PerfectCRM-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.RegExp" />
+    <property name="settings.editor.splitter.proportion" value="0.3113325" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\student\upload_files\homework_data\2" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\templates" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\student\templates\student" />
       <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\crm\templates\crm" />
       <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\crm\templates" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\templates\crm" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\king_admin\static" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\king_admin\templates\kingadmin" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\crm" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\king_admin\templates\kingadmin" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\king_admin\static" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\king_admin\static\fonts" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\app02" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\templates\student" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\student\upload_files\homework_data\2" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\templates\teachers" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\teacher" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\student" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -523,57 +514,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32795697" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50064266" side_tool="true" weight="0.39112905" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49945235" weight="0.3172043" />
-      <window_info anchor="bottom" x="705" y="436" width="868" height="418" id="Run" order="2" weight="0.27371272" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32384825" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3469388" visible="true" weight="0.15616967" />
-      <window_info anchor="bottom" id="manage.py@PerfectCRM" order="12" weight="0.41318977" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5012854" side_tool="true" weight="0.5168237" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32974428" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49871466" weight="0.35397038" />
+      <window_info anchor="bottom" x="705" y="436" width="868" height="418" id="Run" order="2" weight="0.2732167" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.4858681" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3469388" visible="true" weight="0.16709511" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32969153" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32839838" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32969153" />
-      <window_info id="Structure" order="2" sideWeight="0.6530612" side_tool="true" weight="0.15938303" />
+      <window_info id="Structure" order="2" sideWeight="0.6530612" side_tool="true" weight="0.1407455" />
       <window_info id="Favorites" order="1" sideWeight="0.5020408" side_tool="true" weight="0.15938303" />
-      <window_info anchor="bottom" x="706" y="389" width="890" height="404" id="Debug" order="3" sideWeight="0.4993573" weight="0.41184387" />
+      <window_info anchor="bottom" x="706" y="389" width="890" height="404" id="Debug" order="3" sideWeight="0.49871466" weight="0.4051144" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3292683" />
+      <window_info active="true" anchor="bottom" id="manage.py@PerfectCRM" order="14" weight="0.3822342" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.3292683" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="manage.py@PerfectCRM" order="12" weight="0.21407625" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" x="705" y="436" width="868" height="418" id="Run" order="2" weight="0.27419356" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49931973" visible="true" weight="0.13046272" />
-      <window_info id="Structure" order="1" sideWeight="0.50068027" side_tool="true" weight="0.18573265" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3252688" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50054765" side_tool="true" weight="0.3102041" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" x="706" y="389" width="890" height="404" id="Debug" order="3" weight="0.4543011" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3292683" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" sideWeight="0.49945235" visible="true" weight="0.24731183" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -593,201 +559,127 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="281" />
+      <option name="time" value="357" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/db/models/query_utils.py">
+    <entry file="file://$PROJECT_DIR$/crm/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+        <state relative-caret-position="125">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/forms/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="509" column="6" selection-start-line="509" selection-start-column="6" selection-end-line="509" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="402" selection-start-line="402" selection-end-line="402" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/wsgiref/simple_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/contrib/admin/static/admin/js/vendor/jquery/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="6181" column="4" selection-start-line="6181" selection-start-column="4" selection-end-line="6181" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/admin.py">
+    <entry file="file://$PROJECT_DIR$/student/templatetags/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/conf/urls/__init__.py">
+    <entry file="file://$PROJECT_DIR$/crm/templatetags/crm_tags.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/utils.py">
+    <entry file="file://$PROJECT_DIR$/templates/crm/complete_info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="76">
+          <caret line="115" column="17" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/template/base.py">
+    <entry file="file://$USER_HOME$/crm_env/Lib/_weakrefset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="956" selection-start-line="956" selection-end-line="956" />
+        <state relative-caret-position="290">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/templates/kingadmin/selelct_test.html" />
-    <entry file="file://$PROJECT_DIR$/king_admin/templates/kingadmin/change_info_bakup.html" />
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/contrib/staticfiles/finders.py">
+    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/core/handlers/exception.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="263" selection-start-line="263" selection-end-line="263" />
+        <state relative-caret-position="124">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/db/models/fields/related.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/typing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
-          <caret line="1148" column="8" selection-start-line="1148" selection-start-column="8" selection-end-line="1148" selection-end-column="8" />
+          <caret line="2258" column="8" selection-start-line="2258" selection-start-column="8" selection-end-line="2258" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/template/library.py">
+    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/db/models/fields/files.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="202" selection-start-line="202" selection-end-line="202" />
+        <state relative-caret-position="237">
+          <caret line="230" column="8" selection-start-line="230" selection-start-column="8" selection-end-line="230" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-1562471669/builtins.py">
+    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/http/response.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="167" column="4" selection-start-line="167" selection-start-column="4" selection-end-line="167" selection-end-column="4" />
+        <state relative-caret-position="-511">
+          <caret line="404" column="6" selection-start-line="404" selection-start-column="6" selection-end-line="404" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teachers/class_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/crm/audit_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="184" selection-start-line="184" selection-end-line="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teachers/student_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crm/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="17" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/forms/widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="543" column="13" selection-start-line="543" selection-start-column="13" selection-end-line="543" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="977" column="4" selection-start-line="977" selection-start-column="4" selection-end-line="977" selection-end-column="4" />
+        <state relative-caret-position="66">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/king_admin/app_setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="103">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/sites.py">
+    <entry file="file://$PROJECT_DIR$/king_admin/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/templates/kingadmin/del_obj.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="100">
+          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
           <folding>
-            <element signature="e#238#1468#0#HTML" />
-            <element signature="e#804#862#0#HTML" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/static/css/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="75" column="1" lean-forward="true" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/templates/kingadmin/app_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#60#162#0#HTML" />
-            <element signature="e#297#882#0#HTML" />
-            <element signature="e#891#1406#0#HTML" />
-            <element signature="e#1440#2566#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/templates/kingadmin/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/templates/kingadmin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm/templatetags.py" />
-    <entry file="file://$PROJECT_DIR$/crm/templatetags/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/templates/kingadmin/add_obj.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/king_admin/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="164" column="33" selection-start-line="164" selection-start-column="33" selection-end-line="164" selection-end-column="33" />
+        <state relative-caret-position="-506">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
+            <element signature="e#1371#4213#0" />
             <element signature="e#4316#5118#0" />
             <element signature="e#5176#5567#0" />
             <element signature="e#5407#5506#0" />
@@ -795,192 +687,276 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/urls.py">
+    <entry file="file://$PROJECT_DIR$/PerfectCRM/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="152">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PerfectCRM/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="68" column="59" lean-forward="true" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm/form_handle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="31" selection-end-column="37" />
-          <folding>
-            <element signature="e#329#1113#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="202" selection-start-line="202" selection-end-line="202" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/forms/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="435" column="8" selection-start-line="435" selection-start-column="8" selection-end-line="435" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/base_king_admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/form_handle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="102" selection-start-line="20" selection-start-column="102" selection-end-line="20" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="275" column="22" selection-start-line="275" selection-start-column="22" selection-end-line="275" selection-end-column="22" />
-          <folding>
-            <element signature="e#3182#4104#0" />
-            <element signature="e#6704#7170#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/templates/kingadmin/table_objects_list_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="883">
-          <caret line="146" column="38" selection-start-line="146" selection-start-column="38" selection-end-line="146" selection-end-column="38" />
-          <folding>
-            <element signature="n#nav#0;n#!!top" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#form#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#thead#0;n#table#0;n#div#0;n#!!top" />
-            <element signature="n#tbody#0;n#table#0;n#div#0;n#!!top" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crm/kingadmin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="88">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crm/views.py">
+    <entry file="file://$PROJECT_DIR$/student/migrations/0003_auto_20180720_2340.py" />
+    <entry file="file://$PROJECT_DIR$/student/migrations/0002_auto_20180720_2338.py" />
+    <entry file="file://$PROJECT_DIR$/student/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="98" column="37" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
+        <state relative-caret-position="529">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/kingadmin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#30#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/templates/kingadmin/change_info.html">
+    <entry file="file://$PROJECT_DIR$/teacher/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/templatetags/my_tag.py">
+    <entry file="file://$PROJECT_DIR$/templates/teachers/students_homework_uploads.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="40" column="117" selection-start-line="40" selection-start-column="117" selection-end-line="40" selection-end-column="117" />
+        <state relative-caret-position="80">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/contrib/auth/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PerfectCRM/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="142" column="25" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/forms/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="256" column="8" selection-start-line="256" selection-start-column="8" selection-end-line="256" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#234#955#0" />
-            <element signature="e#3369#3715#0" />
-            <element signature="e#3779#4116#0" />
-            <element signature="e#4200#4575#0" />
-            <element signature="e#4637#4861#0" />
-            <element signature="e#4933#5113#0" />
-            <element signature="e#5180#5377#0" />
-            <element signature="e#5432#5588#0" />
-            <element signature="e#5661#6175#0" />
-            <element signature="e#6266#6997#0" />
-            <element signature="e#7061#8934#0" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crm/templates/crm/student_enroll.html">
+    <entry file="file://$PROJECT_DIR$/crm/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state relative-caret-position="66">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crm/templates/crm/complete_info.html">
+    <entry file="file://$PROJECT_DIR$/student/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        <state relative-caret-position="263">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teachers/homework_coment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding>
+            <element signature="e#1455#1479#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/template/library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="202" selection-start-line="202" selection-end-line="202" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teachers/review_homework_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
+          <folding>
+            <element signature="e#205#263#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templatetags/student_tag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/homework_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/homework_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2231">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/homework_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding>
+            <element signature="e#120#187#0#HTML" />
+            <element signature="e#189#217#0#HTML" />
+            <element signature="n#block#1;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="53" column="12" lean-forward="true" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/crm/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crm/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="72">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/re.py">
+    <entry file="file://$PROJECT_DIR$/templates/student/homework_detail_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm/templatetags/crm_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm/templates/crm/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="211">
+          <caret line="47" selection-start-line="47" selection-end-line="82" selection-end-column="14" />
           <folding>
-            <element signature="e#48#1172#0#HTML" />
+            <element signature="n#block#1;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crm/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#389#868#0" />
+            <element signature="e#900#1289#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/homework_list_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/homework_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+          <folding>
+            <element signature="e#1969#3414#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/homework_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="144" column="96" selection-start-line="144" selection-start-column="96" selection-end-line="144" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
