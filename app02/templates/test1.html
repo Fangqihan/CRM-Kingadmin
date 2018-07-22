@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1{
+            color: red;
+            margin-left: 200px;
+        }
+    </style>
+
+    {% block custom_css %}
+    {% endblock %}
+
+</head>
+<body>
+    <h1>test1</h1>
+
+    {% block content %}
+        <h1>还是test1</h1>
+
+        {% block left_content %}
+            <h1>继续test1</h1>
+        {% endblock %}
+
+    {% endblock %}
+
+</body>
+
+<script>
+    $('body').on('click','h1',function () {
+        alert($(this).text())
+    })
+</script>
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+
+</html>

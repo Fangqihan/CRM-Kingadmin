@@ -1,15 +1,21 @@
-{% extends 'teachers/class_list.html' %}
-
+{% extends 'base.html' %}
 
 {% block title %}
     <title>班级学生列表</title>
 {% endblock %}
 
 
-{% block content %}
+{% block breadcrumb %}
+    <ol class="breadcrumb">
+      <li><a href="{% url 'class_list' %}">班级列表</a></li>
+      <li><a href="{% url 'student_list' class_id %}" class="active">{{ class_grade }}</a></li>
+    </ol>
+{% endblock %}
+
+{% block right_content %}
     <div class="panel panel-primary">
     <div class="panel-heading">
-        <h3>学生列表</h3>
+        <h4>学生列表</h4>
     </div>
     <div class="panel-body" style="">
         {#  导航栏 #}
@@ -17,16 +23,20 @@
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <td>学号</td>
-                        <td>姓名</td>
+                        <td class="col-lg-1">学号</td>
+                        <td class="col-md-2">姓名</td>
+                        <td class="col-md-2">性别</td>
+                        <td class="col-md-2">年龄</td>
                     </tr>
                 </thead>
 
                 <tbody>
-                    {% for stu in student_list %}
+                    {% for stu_enroll in enroll_student_list %}
                     <tr>
-                        <td><a href="{% url 'homework_list' stu.id %}">{{ stu.customer.id }}</a></td>
-                        <td><a>{{ stu.customer.name }}</a></td>
+                        <td><a href="{% url 'homework_list' stu_enroll.student.id %}">{{ stu_enroll.student.id }}</a></td>
+                        <td>{{ stu_enroll.customer.name }}</td>
+                        <td>{{ stu_enroll.customer.get_gender_display }}</td>
+                        <td>{{ stu_enroll.customer.age }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>

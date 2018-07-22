@@ -28,11 +28,13 @@ from django import conf
 
 @register.simple_tag
 def get_file_name(record_id):
-    file_name=''
     homework_upload_dir = os.path.join(conf.settings.STUDENT_HOWEWORK_DIR, str(record_id))
+    if not os.path.isdir(homework_upload_dir):
+        return
     file_lst = os.listdir(homework_upload_dir)
-    if file_lst:
-        file_name = file_lst[0]
+    if not file_lst:
+        return
+    file_name = file_lst[0]
     return file_name
 
 

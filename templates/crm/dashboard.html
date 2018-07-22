@@ -1,65 +1,79 @@
 {% extends 'base.html' %}
+<!--  导航栏 + 左侧菜单栏 + 右侧内容区 模板-->
+{% load static %}
 {% load crm_tags %}
 
-{% block body %}
-   <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">CRM系统</a>
-        </div>
-
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-              {% if request.user.is_authenticated %}
-                <li><a href="">{{ request.user }}</a></li>
-                <li><a href="{% url 'crm_logout' %}">退出登录</a></li>
-              {% else %}
-                <li><a href="{% url 'crm_login' %}">登录</a></li>
-                <li><a href="{% url 'crm_register' %}">注册</a></li>
-              {% endif %}
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-            <div class=" col-md-2 sidebar">
-                <ul class="nav nav-sidebar">
-                    {% for role in request.user.role.select_related %}
-                        {% for menu in role.menu.select_related %}
-                            <li>
-                                <a href="{% if menu.url_type == 0 %}{{ menu.url_name }}{% else %}{% url menu.url_name %}{% endif %}">
-                                {{ menu.name }}
-                                </a>
-                            </li>
-                        {% endfor %}
-                    {% endfor %}
-                </ul>
-            </div>
-
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                {% block content %}
-
-                    <div class="jumbotron">
-                      <h1>Hello, World!</h1>
-                      <p>欢迎来到权限管理系统！</p>
-                      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-                    </div>
-
-                {% endblock %}
-            </div>
-      </div>
-    </div>
+{% block title %}
+    <title>CRM主页</title>
 {% endblock %}
+
+{% block custom_css %}
+{#    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">#}
+{% endblock %}
+
+{% block breadcrumb %}
+    <ol class="breadcrumb">
+        <li><a href="{% url 'crm_home' %}">首页</a></li>
+    </ol>
+{% endblock %}
+
+<!--左侧内容区域-->
+{% block right_content %}
+    <div class="jumbotron">
+      <h1>Hello, {{ request.user }}!</h1>
+      <p>欢迎来到权限管理系统！</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+
+    <div id="myCarousel" class="carousel slide">                        <!--设置轮播器区域样式，设置轮播器滚动样式-->
+        <ol class="carousel-indicators">                                <!--设置轮播器列表区域样式，就是小圆点区域样式-->
+
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>    <!--设置当前列表首选-->
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner">                                    <!--设置轮播器图片区域-->
+            <div class="item active tp1">                                <!--设置轮播器图片样式-->
+                <a href="#"><img src="{% static 'imgs/banner/b1.jpg' %}" alt="第一张"></a>
+            </div>
+            <div class="item tp2">
+                <a href="#"><img src="{% static 'imgs/banner/b2.jpg' %}" alt="第二张"></a>
+            </div>
+            <div class="item tp3">
+                <a href="#"><img src="{% static 'imgs/banner/b3.jpg' %}" alt="第三张"></a>
+            </div>
+            <div class="item tp4">
+                <a href="#"><img src="{% static 'imgs/banner/b4.jpg' %}" alt="第三张"></a>
+            </div>
+        </div>
+
+        <!--设置轮播器箭头区域-->
+        <a href="#myCarousel" data-slide="prev" class="carousel-control left">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+
+        <a href="#myCarousel" data-slide="next" class="carousel-control right">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+    </div>
+
+{% endblock %}
+
+{% block custom_js %}
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <script>
+    $('.carousel').carousel({
+      interval: 2000
+    })
+    </script>
+{% endblock %}
+
+
+
 
 
 

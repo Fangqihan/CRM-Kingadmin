@@ -222,7 +222,7 @@ class PaymentRecord(models.Model):
 
 class Student(models.Model):
     """学生"""
-    student = models.ForeignKey('StudentEnrollment')  #　只有走完报名流程才会成为正式学员
+    student = models.OneToOneField('StudentEnrollment')  #　只有走完报名流程才会成为正式学员
     user_account = models.OneToOneField('UserProfile')  # 创建用户
 
     class Meta:

@@ -1,4 +1,4 @@
-{% extends 'student/homework_list.html' %}
+{% extends 'base.html' %}
 
 {% block title %}
 <title>作业批改</title>
@@ -14,14 +14,19 @@
 </style>
 {% endblock %}
 
-{% block nav_title %}
-<a class="navbar-brand" href="https://v3.bootcss.com/examples/dashboard/#" style="padding-left: 10%;display: inline-block">
-班级管理
-</a>
+
+{% block breadcrumb %}
+    <ol class="breadcrumb">
+      <li><a href="{% url 'class_list' %}">班级列表</a></li>
+      <li><a href="{% url 'student_list' homework_rec.student.student.class_grade.id %}" class=""
+      >{{ homework_rec.student.student.class_grade }}</a></li>
+      <li><a href="{% url 'homework_list' homework_rec.student.id %}" class="">{{ homework_rec.student }}</a></li>
+      <li><a href="{% url 'homework_comment' homework_rec.id %}" class="">{{ homework_rec.homework.title }}</a></li>
+    </ol>
 {% endblock %}
 
 
-{% block content %}
+{% block right_content %}
     <div class="panel panel-primary">
         <div class="panel-heading">
             <h3>作业打分及评语</h3>

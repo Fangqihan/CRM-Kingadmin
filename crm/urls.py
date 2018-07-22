@@ -2,7 +2,7 @@ from django.conf.urls import url,include
 from crm import views
 
 urlpatterns = [
-    url(r'^$', views.dashboard,name='sales_dashboard'),
+    url(r'^$', views.dashboard,name='crm_home'),
     url(r'^login/$', views.user_login, name='crm_login'),
     url(r'^register/$', views.user_register, name='crm_register'),
     url(r'^logout/$', views.user_logout, name='crm_logout'),

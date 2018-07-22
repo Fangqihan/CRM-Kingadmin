@@ -2,62 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="590d2ea3-1283-4ad4-b818-95f6e1ffb04c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/crm/migrations/0016_contracttemplate_class_grade.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm/migrations/0017_remove_contracttemplate_class_grade.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm/migrations/0018_auto_20180719_0023.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm/migrations/0019_auto_20180720_2302.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm/migrations/0020_auto_20180720_2309.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm/migrations/0021_auto_20180721_1328.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/dropzone.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/offcanvas.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/dropzone.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/offcanvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/kingadmin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/migrations/0002_homeworkrecord.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/migrations/0003_auto_20180721_0928.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/migrations/0004_homeworkrecord_upload_time.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/migrations/0005_auto_20180721_1617.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/migrations/0006_auto_20180721_1640.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templatetags/student_tag.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/upload_files/homework_data/2/CRM_fqh1.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/crm/audit_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/crm/audit_student_enroll.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/crm/complete_info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/crm/student_enroll.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/student/homework_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/student/homework_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/teachers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/teachers/class_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/teachers/homework_coment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/teachers/review_homework_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/teachers/student_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/teachers/students_homework_uploads.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app02/templates/test1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app02/templates/test2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0022_auto_20180722_1118.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/upload_files/enrollment_data/15/ModelForm添加样式.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/my_css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgs/banner/b1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgs/banner/b2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgs/banner/b3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgs/banner/b4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/teachers/student_homework_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PerfectCRM/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/PerfectCRM/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PerfectCRM/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/PerfectCRM/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/kingadmin.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/kingadmin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app02/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app02/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crm/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/templates/crm/complete_info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/templates/crm/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crm/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/templates/crm/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crm/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/templates/crm/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crm/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/templates/crm/student_enroll.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/crm/templatetags/crm_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/templatetags/crm_tags.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crm/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/king_admin/sites.py" beforeDir="false" afterPath="$PROJECT_DIR$/king_admin/sites.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/king_admin/templates/kingadmin/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/king_admin/templates/kingadmin/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/king_admin/templates/kingadmin/change_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/king_admin/templates/kingadmin/change_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/king_admin/templates/kingadmin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/king_admin/templates/kingadmin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/templatetags/student_tag.py" beforeDir="false" afterPath="$PROJECT_DIR$/student/templatetags/student_tag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/student/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/student/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/crm/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crm/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/crm/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crm/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/crm/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crm/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/homework_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/homework_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/homework_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/homework_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teachers/class_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teachers/class_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teachers/homework_coment.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teachers/homework_coment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teachers/review_homework_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teachers/review_homework_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teachers/student_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teachers/student_list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -94,61 +81,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crm/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-                <element signature="e#389#868#0" />
-                <element signature="e#900#1289#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homework_detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/student/homework_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="29" selection-start-column="29" selection-end-column="29" />
-              <folding>
-                <element signature="e#1969#3414#0#HTML" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/student/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homework_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/student/homework_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="144" column="96" selection-start-line="144" selection-start-column="96" selection-end-line="144" selection-end-column="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/student/urls.py">
+        <entry file="file://$PROJECT_DIR$/PerfectCRM/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+            <state relative-caret-position="288">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app02/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test1.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app02/templates/test1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="31" selection-start-line="31" selection-end-line="35" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app02/templates/test2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" selection-start-line="4" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -158,24 +125,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>classlist</find>
-      <find>bran</find>
-      <find>crm_studentenrollment</find>
-      <find>menu</find>
-      <find>save</find>
-      <find>Meta</find>
-      <find>thead</find>
-      <find>input</find>
-      <find>search</find>
-      <find>search_box</find>
       <find>changelist-form</find>
       <find>filter_box</find>
       <find>text</find>
@@ -195,7 +153,17 @@
       <find>status</find>
       <find>class=&quot;panel panel-primary&quot;</find>
       <find>container-fluid</find>
+      <find>tbody</find>
+      <find>.navbar-inverse .navbar-nav&gt;li&gt;a</find>
+      <find>h4</find>
+      <find>desc</find>
+      <find>.col-lg-4</find>
+      <find>homework_upload</find>
+      <find>homework_upload·</find>
       <find>upload_file_list</find>
+      <find>Off Canvas Template for Bootstrap.html</find>
+      <find>hello</find>
+      <find>navbar-brand</find>
     </findStrings>
     <replaceStrings>
       <replace>page_obj</replace>
@@ -208,16 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/change_info.html" />
-        <option value="$PROJECT_DIR$/crm/templates/crm/student_enroll.html" />
-        <option value="$PROJECT_DIR$/static/css/dropzone.html" />
-        <option value="$PROJECT_DIR$/static/css/dropzone.css" />
-        <option value="$PROJECT_DIR$/crm/templates/crm/audit_list.html" />
-        <option value="$PROJECT_DIR$/crm/templates/crm/audit_student_enroll.html" />
-        <option value="$PROJECT_DIR$/crm/forms.py" />
-        <option value="$PROJECT_DIR$/student/templates/students_home.html" />
-        <option value="$PROJECT_DIR$/king_admin/templates/kingadmin/base.html" />
-        <option value="$PROJECT_DIR$/student/templates/homework.html" />
         <option value="$PROJECT_DIR$/king_admin/urls.py" />
         <option value="$PROJECT_DIR$/king_admin/sites.py" />
         <option value="$PROJECT_DIR$/student/admin.py" />
@@ -228,37 +186,47 @@
         <option value="$PROJECT_DIR$/crm/templates/crm/dashboard.html" />
         <option value="$PROJECT_DIR$/student/templates/student/homework_detail.html" />
         <option value="$PROJECT_DIR$/crm/templates/crm/complete_info.html" />
-        <option value="$PROJECT_DIR$/crm/templatetags/crm_tags.py" />
         <option value="$PROJECT_DIR$/student/templatetags/__init__.py" />
-        <option value="$PROJECT_DIR$/crm/urls.py" />
         <option value="$PROJECT_DIR$/teacher/models.py" />
-        <option value="$PROJECT_DIR$/PerfectCRM/urls.py" />
-        <option value="$PROJECT_DIR$/templates/teachers/class_list.html" />
         <option value="$PROJECT_DIR$/templates/crm/audit_list.html" />
-        <option value="$PROJECT_DIR$/student/urls.py" />
-        <option value="$PROJECT_DIR$/templates/teachers/student_list.html" />
         <option value="$PROJECT_DIR$/crm/admin.py" />
         <option value="$PROJECT_DIR$/crm/kingadmin.py" />
         <option value="$PROJECT_DIR$/student/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/student/kingadmin.py" />
-        <option value="$PROJECT_DIR$/crm/models.py" />
         <option value="$PROJECT_DIR$/templates/teachers/students_homework_uploads.html" />
         <option value="$PROJECT_DIR$/PerfectCRM/settings.py" />
-        <option value="$PROJECT_DIR$/crm/views.py" />
-        <option value="$PROJECT_DIR$/teacher/urls.py" />
-        <option value="$PROJECT_DIR$/templates/teachers/homework_coment.html" />
         <option value="$PROJECT_DIR$/teacher/forms.py" />
         <option value="$PROJECT_DIR$/student/models.py" />
-        <option value="$PROJECT_DIR$/teacher/views.py" />
-        <option value="$PROJECT_DIR$/student/templatetags/student_tag.py" />
-        <option value="$PROJECT_DIR$/templates/teachers/review_homework_list.html" />
-        <option value="$PROJECT_DIR$/templates/student/homework_list.html" />
-        <option value="$PROJECT_DIR$/templates/crm/dashboard.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/student/homework_detail_1.html" />
         <option value="$PROJECT_DIR$/templates/student/homework_list_1.html" />
-        <option value="$PROJECT_DIR$/templates/student/homework_detail.html" />
+        <option value="$PROJECT_DIR$/crm/views.py" />
+        <option value="$PROJECT_DIR$/static/js/homework.js" />
         <option value="$PROJECT_DIR$/student/views.py" />
+        <option value="$PROJECT_DIR$/templates/crm/login.html" />
+        <option value="$PROJECT_DIR$/templates/crm/register.html" />
+        <option value="$PROJECT_DIR$/templates/student/homework_detail.html" />
+        <option value="$PROJECT_DIR$/templates/teachers/class_list.html" />
+        <option value="$PROJECT_DIR$/student/urls.py" />
+        <option value="$PROJECT_DIR$/crm/models.py" />
+        <option value="$PROJECT_DIR$/templates/teachers/student_homework_list.html" />
+        <option value="$PROJECT_DIR$/templates/teachers/student_list.html" />
+        <option value="$PROJECT_DIR$/student/templatetags/student_tag.py" />
+        <option value="$PROJECT_DIR$/templates/teachers/homework_coment.html" />
+        <option value="$PROJECT_DIR$/templates/teachers/review_homework_list.html" />
+        <option value="$PROJECT_DIR$/teacher/views.py" />
+        <option value="$PROJECT_DIR$/templates/student/homework_list.html" />
+        <option value="$PROJECT_DIR$/crm/urls.py" />
+        <option value="$PROJECT_DIR$/static/css/my_css.css" />
+        <option value="$PROJECT_DIR$/crm/templatetags/crm_tags.py" />
+        <option value="$PROJECT_DIR$/teacher/urls.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/test.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/crm/dashboard.html" />
+        <option value="$PROJECT_DIR$/PerfectCRM/urls.py" />
+        <option value="$PROJECT_DIR$/app02/templates/test2.html" />
+        <option value="$PROJECT_DIR$/app02/views.py" />
+        <option value="$PROJECT_DIR$/app02/templates/test1.html" />
       </list>
     </option>
   </component>
@@ -275,7 +243,9 @@
     <option name="width" value="1516" />
     <option name="height" value="827" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -291,39 +261,18 @@
             <path>
               <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
               <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="app02" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
               <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
+              <item name="app02" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
               <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
               <item name="PerfectCRM" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="teachers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PerfectCRM" type="b2602c69:ProjectViewProjectNode" />
@@ -344,23 +293,23 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.RegExp" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
     <property name="settings.editor.splitter.proportion" value="0.3113325" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\static\fonts" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\static" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\crm\upload_files\enrollment_data" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\crm\upload_files" />
       <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\student\upload_files\homework_data\2" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\templates" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\student\templates\student" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\crm\templates\crm" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\crm\templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\templates\student" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\student\upload_files\homework_data\2" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\templates\teachers" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\teacher" />
-      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\student" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\static\imgs\banner" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\static\imgs" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\static\fonts" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM" />
+      <recent name="C:\Users\Administrator\PycharmProjects\PerfectCRM\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -514,30 +463,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32795697" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5012854" side_tool="true" weight="0.5168237" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32974428" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49871466" weight="0.35397038" />
-      <window_info anchor="bottom" x="705" y="436" width="868" height="418" id="Run" order="2" weight="0.2732167" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.4858681" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3469388" visible="true" weight="0.16709511" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49871466" weight="0.32974428" />
+      <window_info anchor="bottom" x="705" y="436" width="868" height="418" id="Run" order="2" weight="0.2211669" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.48501363" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3469388" visible="true" weight="0.1336761" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32969153" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32839838" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32969153" />
       <window_info id="Structure" order="2" sideWeight="0.6530612" side_tool="true" weight="0.1407455" />
       <window_info id="Favorites" order="1" sideWeight="0.5020408" side_tool="true" weight="0.15938303" />
-      <window_info anchor="bottom" x="706" y="389" width="890" height="404" id="Debug" order="3" sideWeight="0.49871466" weight="0.4051144" />
+      <window_info anchor="bottom" x="706" y="389" width="890" height="404" id="Debug" order="3" sideWeight="0.49871466" weight="0.2971506" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="manage.py@PerfectCRM" order="14" weight="0.3822342" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="manage.py@PerfectCRM" order="14" weight="0.3822342" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3283582" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.3292683" />
     </layout>
   </component>
@@ -559,153 +509,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="357" />
+      <option name="time" value="376" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/crm/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/templatetags/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm/templatetags/crm_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/crm/complete_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="115" column="17" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/_weakrefset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/core/handlers/exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="2258" column="8" selection-start-line="2258" selection-start-column="8" selection-end-line="2258" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/db/models/fields/files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="230" column="8" selection-start-line="230" selection-start-column="8" selection-end-line="230" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/http/response.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-511">
-          <caret line="404" column="6" selection-start-line="404" selection-start-column="6" selection-end-line="404" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/teachers/class_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/crm/audit_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/teachers/student_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/app_setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-506">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#1371#4213#0" />
-            <element signature="e#4316#5118#0" />
-            <element signature="e#5176#5567#0" />
-            <element signature="e#5407#5506#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PerfectCRM/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm/kingadmin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/migrations/0003_auto_20180720_2340.py" />
-    <entry file="file://$PROJECT_DIR$/student/migrations/0002_auto_20180720_2338.py" />
     <entry file="file://$PROJECT_DIR$/student/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -720,30 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="e#30#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/teachers/students_homework_uploads.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/contrib/auth/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -758,87 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="256" column="8" selection-start-line="256" selection-start-column="8" selection-end-line="256" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/teachers/homework_coment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding>
-            <element signature="e#1455#1479#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/template/library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="202" selection-start-line="202" selection-end-line="202" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/teachers/review_homework_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-          <folding>
-            <element signature="e#205#263#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/templatetags/student_tag.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -861,103 +563,294 @@
         <state relative-caret-position="-76">
           <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
           <folding>
-            <element signature="e#120#187#0#HTML" />
-            <element signature="e#189#217#0#HTML" />
             <element signature="n#block#1;n#!!top" />
+            <element signature="n#block#3;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/templates/student/homework_detail_2.html" />
+    <entry file="file://$PROJECT_DIR$/templates/student/homework_list_2.html" />
+    <entry file="file://$PROJECT_DIR$/static/js/dropzone.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="53" column="12" lean-forward="true" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+        <state relative-caret-position="-19806" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/homework.js" />
+    <entry file="file://$PROJECT_DIR$/student/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
           <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/crm/dashboard.html">
+    <entry file="file://$PROJECT_DIR$/templates/teachers/students_homework_uploads.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="76">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crm/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/teachers/class_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/student/homework_detail_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="47" selection-start-line="47" selection-end-line="82" selection-end-column="14" />
-          <folding>
-            <element signature="n#block#1;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <element signature="e#389#868#0" />
-            <element signature="e#900#1289#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/student/homework_list_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/student/homework_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-          <folding>
-            <element signature="e#1969#3414#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/student/homework_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="144" column="96" selection-start-line="144" selection-start-column="96" selection-end-line="144" selection-end-column="96" />
+        <state relative-caret-position="209">
+          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/student/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        <state relative-caret-position="176">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/student/views.py">
+    <entry file="file://$PROJECT_DIR$/teacher/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crm/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="224" column="75" selection-start-line="224" selection-start-column="59" selection-end-line="224" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/contrib/auth/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="184" selection-start-line="184" selection-end-line="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teachers/student_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/crm_env/Lib/site-packages/django/template/library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="202" selection-start-line="202" selection-end-line="202" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teachers/homework_coment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="23" column="104" selection-start-line="23" selection-start-column="104" selection-end-line="23" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teachers/student_homework_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="17" selection-start-line="17" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templatetags/student_tag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teachers/review_homework_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/homework_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/my_css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/crm/complete_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/crm/audit_student_enroll.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/crm/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/crm/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/homework_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+          <folding>
+            <element signature="n#block#1;n#!!top" />
+            <element signature="n#block#3;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crm/templatetags/crm_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/structural.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="149" column="16" selection-start-line="149" selection-start-column="16" selection-end-line="149" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bootstrap.min.css" />
+    <entry file="file://$PROJECT_DIR$/templates/test.html" />
+    <entry file="file://$PROJECT_DIR$/crm/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="4" column="27" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/imgs/banner/b1.png" />
+    <entry file="file://$PROJECT_DIR$/crm/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#389#868#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/crm/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PerfectCRM/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app02/templates/test2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app02/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app02/templates/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="31" selection-start-line="31" selection-end-line="35" selection-end-column="9" />
         </state>
       </provider>
     </entry>

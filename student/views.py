@@ -88,6 +88,7 @@ def homework_delete(request, record_id, file_name):
 from django.http import FileResponse
 from django.utils.encoding import escape_uri_path
 
+
 @login_required
 def homework_download(request, record_id, file_name):
     """文件下载,问题是若返回 中文字段 会出现乱码"""
@@ -98,20 +99,4 @@ def homework_download(request, record_id, file_name):
     # 此处设置防止中文乱码
     response['Content-Disposition'] = "attachment; filename*=utf-8''{}".format(escape_uri_path(file_name))
     return response
-
-
-
-def homework_download_1(request, record_id, file_name):
-    file_path = os.path.join(conf.settings.STUDENT_HOWEWORK_DIR, record_id, file_name)
-    try:
-        f = open(file_path,'rb')
-        download_file = open(file_name,'wb')
-        for line in f:
-            download_file.write(line)
-        f.close()
-        download_file.close()
-        return HttpResponse(json.dumps({'status': True,}))
-    except Exception:
-        return HttpResponse(json.dumps({'status': False, 'error_msg': '下载失败'}))
-
 

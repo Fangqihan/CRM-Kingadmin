@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% load student_tag %}
+
+{% block title %}
+<title>学生作业记录</title>
+{% endblock %}
+
+{% block custom_css %}
+<style>
+.correct_status{
+    color: red;
+}
+</style>
+{% endblock %}
+
+{% block breadcrumb %}
+    <ol class="breadcrumb">
+      <li><a href="{% url 'class_list' %}">班级列表</a></li>
+      <li><a href="{% url 'student_list' stu.student.class_grade.id %}" class="">{{ stu.student.class_grade }}</a></li>
+      <li><a href="{% url 'homework_list' stu_id %}" class="active">{{ stu }}</a></li>
+    </ol>
+{% endblock %}
+
+
+{% block right_content %}
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h4>学生作业记录</h4>
+        </div>
+        <div class="panel-body" style="">
+             <table class="table-bordered table">
+                <thead>
+                     <tr>
+                        <td class="col-md-1">编号</td>
+                        <td class="col-md-2">名称</td>
+                        <td class="col-md-1">学生</td>
+                        <td class="col-md-2">班级</td>
+                        <td class="col-md-2">上传日期</td>
+                        <td class="col-md-1">批改状态</td>
+                        <td class="col-md-1">分数</td>
+                        <td class="col-md-1">作业</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for homework_record in homework_lst %}
+                    <tr>
+                        <td><a href="{% ifequal homework_record.status 2 %}#{% else %}{% url 'homework_comment' homework_record.id %}{% endifequal %}">{{ homework_record.id }}</a></td>
+                        <td>{{ homework_record.homework.title }}</td>
+                        <td>{{ homework_record.student }}</td>
+                        <td>{{ homework_record.student.student.class_grade }}</td>
+                        <td>{% to_string homework_record.upload_time %}</td>
+                        <td class="{% ifequal homework_record.status 1 %}correct_status{% else %}{% url 'homework_comment' homework_record.id %}{% endifequal %}">{{ homework_record.get_status_display }}</td>
+                        <td>{{ homework_record.score }}</td>
+                        <!-- 获取当前作业记录 学生上传的文件名称 -->
+                        {% get_file_name homework_record.id as file_name %}
+                        <!-- 根据之前获取的文件名称用于下载地址的参数-->
+                        <td><a href="{% if file_name %}{% url 'homework_download' homework_record.id file_name %}{% else %}#{% endif %}">下载</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+{% endblock %}

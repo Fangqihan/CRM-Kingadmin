@@ -2,6 +2,8 @@
 <html lang="zh-CN">
 {% load staticfiles %}
 
+{% load crm_tags %}
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,65 +11,118 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="https://v3.bootcss.com/favicon.ico">
-    <title>KingAdmin</title>
+
+    <!-- 页面名称 -->
+    {% block title %}
+        <title>KingAdmin</title>
+    {% endblock %}
+
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/ie10-viewport-bug-workaround.css' %}" rel="stylesheet">
     <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
     <link href="{% static 'css/offcanvas.css' %}" rel="stylesheet">
     <script src={% static 'js/ie-emulation-modes-warning.js' %}></script><style type="text/css" abt="234"></style>
-    <link rel="stylesheet" href="{% static 'css/dropzone.css' %}">
-    <style>
-        .navbar-header{
-            width: 500px;
-        }
-        .main{
-            {#margin-left: 100px;#}
-            {#margin-right: 100px;#}
-        }
-        tbody{
-            color: gray;
-        }
-        tbody a{
-            color: gray;
-        }
-       .navbar-inverse .navbar-nav>li>a {
-           color: #f8f8f8;
-           font-size: 16px;
-        }
-        .navbar-inverse .navbar-brand {
-            color: whitesmoke;
-            font-size: 20px;
-            font-weight: 500;
-        }
-        .sidebar{
-            background: #2C2C2C;
-        }
-        .sidebar a:link,.sidebar a:active,.sidebar a:hover{
-            color: whitesmoke;
-            font-size: 16px;
-        }
-        .nav>li>a:focus, .nav>li>a:hover,.nav>li>a:link {
-            text-decoration: none;
-            background-color: rgba(69, 164, 246, 0.02);
-        }
-
-    </style>
+    <link rel="stylesheet" href="{% static 'css/my_css.css' %}">
     <script src="{% static 'js/ie-emulation-modes-warning.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src=""></script>
+    <style>
+        .nav-sidebar a:link{
+            text-decoration: none;
+            color: white;
+        }
+        .nav-sidebar a:hover{
+            text-decoration: none;
+            color: white;
+        }
+        .nav-sidebar a{
+            color: white;
+        }
+        .nav>li>a:focus, .nav>li>a:hover {
+            text-decoration: none;
+            background-color: #4b9de3!important;
+        }
+    </style>
 
-    {% block custom_css %}{% endblock %}
+    {% block custom_css %}
+    {% endblock %}
+
 </head>
-<body>
 
-{% block body %}{% endblock %}
+<!--body区域-->
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                      data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{% url 'crm_home' %}">CRM系统</a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  {% if request.user.is_authenticated %}
+                    <li><a href="">{{ request.user }}</a></li>
+                    <li><a href="{% url 'crm_logout' %}">退出登录</a></li>
+                  {% else %}
+                    <li><a href="{% url 'crm_login' %}">登录</a></li>
+                    <li><a href="{% url 'crm_register' %}">注册</a></li>
+                  {% endif %}
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    {% for role in request.user.role.select_related %}
+                        {% for menu in role.menu.select_related %}
+                            <li class="{% is_active menu.url_name request.path as is_active %}">
+                                <a class="{% if is_active %}menu_active{% else %}{% endif %}"
+                                   href="{% if menu.url_type == 0 %}{{ menu.url_name }}{% else %}{% url menu.url_name %}{% endif %}">
+                                {{ menu.name }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+                {% block breadcrumb %}
+                {% endblock %}
+
+                {% block right_content %}
+                {% endblock %}
+
+
+            </div>
+
+      </div>
+
+         <footer>
+            <p>© Company 2018</p>
+        </footer>
+    </div>
 
 </body>
 
-<script src="{% static 'js/jquery.min.js' %}"></script>
+{% block custom_js %}{% endblock %}
+
 <script>window.jQuery || document.write('<script src="{% static 'js/jquery.min.js' %}"><\/script>')</script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
-<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 <script src="{% static 'js/holder.min.js' %}"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
-{% block custom_js %}{% endblock %}
+<script src="{% static 'js/offcanvas.js' %}"></script>
+<script src="{% static 'js/holder.min.js' %}"></script>
+
 </html>
