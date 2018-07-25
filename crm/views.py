@@ -46,6 +46,7 @@ def user_logout(request):
 from crm import models
 
 
+@login_required
 def add_student(request):
     """销售添加学生"""
     customers = models.CustomerInfo.objects.all()
@@ -68,6 +69,7 @@ def add_student(request):
             )
             print('学生创建成功')
             enroll_links = 'http://127.0.0.1:8008/crm/enroll/%s/' % student_enroll.id
+            print(enroll_links)
 
     return render(request, 'crm/student_enroll.html', locals())
 
@@ -92,12 +94,12 @@ def student_enroll(request, id):
         enrollment_upload_dir = os.path.join(conf.settings.ORM_PATH_DIR,id)
         if os.path.isdir(enrollment_upload_dir):
             upload_files=os.listdir(enrollment_upload_dir)
-
             pass
 
     elif request.method == 'POST':
         customer_form = CustomerInfoForm(instance=customer_obj, data=request.POST)
         errors = customer_form.errors
+        #  自定制errors错误信息
         if not request.POST.get('contract_agreed', ''):
             errors['contract_agreed'] = '必须勾选阅读'
         if not request.POST.get('id_num', ''):
@@ -107,12 +109,11 @@ def student_enroll(request, id):
         if not request.POST.get('emergency_contact', ''):
             errors['emergency_contact'] = '紧急联系电话必填'
 
-        if customer_form.is_valid():
-            if student_enroll.contract_agreed:
+        if customer_form.is_valid():  # 表单填写无错误
+            if student_enroll.contract_agreed:  # 排除重复填写此表单
                return HttpResponse('您的相关信息已提交至审核')
 
             student_enroll.contract_agreed = True
-            # from django.utils.timezone import datetime
             import datetime
             student_enroll.contract_signed_time = datetime.datetime.now()
             print(datetime.datetime.now())
@@ -122,6 +123,7 @@ def student_enroll(request, id):
             return HttpResponse('待审批....')
 
         print(errors)
+
     return render(request, 'crm/complete_info.html', locals())
 
 
@@ -131,7 +133,8 @@ import json
 
 def get_classes(request, id):
     branch = Branch.objects.filter(id=int(id)).first()
-    classes = list(ClassList.objects.filter(branch=branch).values('id', 'branch__name', 'course__name', 'semester'))
+    classes = list(ClassList.objects.filter(branch=branch).values(
+        'id', 'branch__name', 'course__name', 'semester'))
     return HttpResponse(json.dumps(classes), content_type="application/json")
 
 
@@ -157,6 +160,7 @@ def enroll_file_upload(request, enrollment_id):
     return HttpResponse(json.dumps({'status': True, }))
 
 
+@login_required
 def audit_list(request):
     """待审核学员列表页面"""
     audit_stu_list = StudentEnrollment.objects.filter(contract_agreed=1,contract_approved=0)
@@ -166,12 +170,14 @@ def audit_list(request):
 import datetime
 
 
+@login_required
 def audit(request,id):
     """审核学员"""
     student_enroll = StudentEnrollment.objects.filter(id=int(id)).first()
     customer_obj = student_enroll.customer
     from .forms import StudentEnrollForm
     student_enroll_form = StudentEnrollForm(instance=student_enroll)
+
     if request.method=='POST':
         student_enroll_form = StudentEnrollForm(instance=student_enroll,data=request.POST)
         if student_enroll.contract_approved:
@@ -189,7 +195,10 @@ def audit(request,id):
 
 import os
 
+
+@login_required
 def enroll_file_delete(request,stu_id,file_name):
+    """文件删除功能，根据学生id和文件名确定要删除的文件路径"""
     file_path = os.path.join(conf.settings.ORM_PATH_DIR,stu_id,file_name)
     if os.path.exists(file_path):
         os.remove(file_path)
@@ -200,6 +209,8 @@ def enroll_file_delete(request,stu_id,file_name):
     else:
         print('no such file:%s' % file_path)
         return HttpResponse(json.dumps({'status':False,'error_msg':'没有找到此文件'}))
+
+
 
 
 

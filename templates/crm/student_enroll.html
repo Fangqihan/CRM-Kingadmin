@@ -1,5 +1,7 @@
 {% extends 'crm/dashboard.html' %}
+
 {% load staticfiles %}
+
 {% load crm_tags %}
 
 {% block custom_css %}
@@ -11,7 +13,7 @@ label{
 
 {% endblock %}
 
-{% block content %}
+{% block right_content %}
 
 <div class="container">
     <div class="row">
@@ -74,7 +76,14 @@ label{
                             <input type="submit" class="btn btn-success" value="提交" style="float: right;margin-right: 5%">
                         </div>
                     </form>
+
                     <hr>
+                    {% if enroll_links %}
+                        <label class="control-label" style="color: green">创建成功，请将链接发送给学员</label>
+                        <div class="">
+                            <input value="{{ enroll_links }}" class="form-control">
+                        </div>
+                    {% endif %}
                 </div>
 
 
@@ -89,23 +98,24 @@ label{
 {% block custom_js %}
 <script>
 String.prototype.format= function(){
-               var args = arguments;
-               return this.replace(/\{(\d+)\}/g,function(s,i){
-                 return args[i];
-               });
-        };
+   var args = arguments;
+   return this.replace(/\{(\d+)\}/g,function(s,i){
+     return args[i];
+   });
+};
 
 $('#branch_select').change(function () {
+    // 选择校区后对应的班级也会同步改变
     var id = $(this).val();
-    $('#class_lst [value]').remove()
+    $('#class_lst [value]').remove();
     $.ajax({
         url:"/crm/get_classes/"+id+"/",
         type:'GET',
         success:function (data) {
-            var ele = ""
+            var ele = "";
             $.each(data,function (k,v) {
-                console.log(k,v,v.id)
-                html_str='<option value="{0}">{1}</option>'
+                console.log(k,v,v.id);
+                html_str='<option value="{0}">{1}</option>';
                 html_str=html_str.format(
                     v.id,
                     v.course__name+'('+v.semester+')期'

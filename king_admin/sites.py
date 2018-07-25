@@ -6,11 +6,11 @@ class AdminSite(object):
         # 启动则生成全局字典,只是实例化一次
         self.enable_admins = {}
 
-    def register(self,model_class,admin_class=BaseKingAdmin):
-        """ 注册表，两个参数，一个表名，一个自定义的admin类"""
-        # 获取app名字（字符串）
+    def register(self, model_class, admin_class=BaseKingAdmin):
+        # 获取注册表的 app名（字符串）
         app_name = model_class._meta.app_label
-        # 获取表名(字符串)
+
+        # 获取注册表的 model名(字符串)
         model_name = model_class._meta.model_name
 
         if not admin_class:
@@ -27,7 +27,6 @@ class AdminSite(object):
 
         self.enable_admins[app_name][model_name] = admin_class
 
+
 # 实例化，就可以调用register方法
 site = AdminSite()
-
-

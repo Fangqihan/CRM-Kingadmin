@@ -27,8 +27,13 @@ class CustomerInfoForm(ModelForm):
         }
 
 
-
 class StudentEnrollForm(ModelForm):
+    """信息完善form"""
+
+    class Meta:
+        model = StudentEnrollment
+        fields = '__all__'
+        readonly_fields = ['customer', 'consultant', 'class_grade', 'contract_agreed', 'contract_signed_time']
 
     def __new__(cls, *args, **kwargs):
         """方法2：在实例化类对象（model_form()）的时候给input框增加样式"""
@@ -40,10 +45,4 @@ class StudentEnrollForm(ModelForm):
                 field_obj.widget.attrs.update({'disabled': True})
 
         return ModelForm.__new__(cls)
-
-    class Meta:
-        model = StudentEnrollment
-        fields= '__all__'
-        readonly_fields = ['customer','consultant','class_grade','contract_agreed','contract_signed_time']
-
 

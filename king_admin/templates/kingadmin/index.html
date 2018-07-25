@@ -33,7 +33,7 @@ td{
                 <li><a href="{% url 'king_admin_logout' %}">退出登录</a></li>
               {% else %}
                 <li><a href="{% url 'king_admin_login' %}">登录</a></li>
-                <li><a href="{% url 'king_admin_register' %}">注册</a></li>
+                <li><a href="{% url 'crm_register' %}">注册</a></li>
               {% endif %}
           </ul>
 
@@ -43,23 +43,23 @@ td{
 
     <div class="container-fluid">
       <div class="row">
-
         <div class="col-sm-9 col-md-8 main">
             {% for app_name,app_tables in enabled_admins.items %}
                 <table class="table table-striped">
                     <thead>
                         <tr>
                             <th style="background: #2e6da4;color: white;font-size: 20px" colspan="2">
-                            <a href="{% url 'kingadmin_app_page' app_name %}" style="color: whitesmoke">{{ app_name }}</a></th>
+                                <a href="{% url 'kingadmin_app_page' app_name %}"
+                                    style="color: whitesmoke">{{ app_name }}</a></th>
                         </tr>
                     </thead>
-
                     <tbody>
-                        {% for model_name in app_tables %}
-                            <tr>
-                                <td><a href="{% url 'model_obj_list' app_name model_name %}">{{ model_name }}</a></td>
-                                <td><a href="{% url 'add_obj' app_name model_name %}"><span class="glyphicon glyphicon-plus">增加</span></a></td>
-                            </tr>
+                        {% for model_name in app_tables %} <!---->
+                        <tr>
+                            <td><a href="{% url 'model_obj_list' app_name model_name %}">{{ model_name }}</a></td>
+                            <td><a href="{% url 'add_obj' app_name model_name %}"
+                                    ><span class="glyphicon glyphicon-plus">增加</span></a></td>
+                        </tr>
                         {% endfor %}
                     </tbody>
                 </table>

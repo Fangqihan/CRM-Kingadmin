@@ -2,6 +2,7 @@ from django.forms import ModelForm
 
 
 def create_model_form(admin_class,add=False):
+
     class Meta:
         model = admin_class.model  # 指定类
         fields = '__all__'  # 指定字段
@@ -11,13 +12,15 @@ def create_model_form(admin_class,add=False):
 
     def __new__(cls,*args,**kwargs):
         # 方法2：在实例化类对象（model_form()）的时候给input框增加样式
-        print(cls.base_fields)
+        print(cls.base_fields)  # 当地类的所有字段
         for field_name, field_obj in cls.base_fields.items():
-            field_obj.widget.attrs.update({'class':'form-control'})
+            field_obj.widget.attrs.update({'class':'form-control'})  #　给当前字段对象增加样式
+
             if field_obj.label=='Content':
+                # 设置textarea样式
                 field_obj.widget.attrs.update({'cols':'100','rows':'10','class':'form-control'})
 
-            # 筛选出教师的字段
+            # 筛选出教师角色为教师的对象
             if field_name == 'teachers':
                 field_obj._queryset = field_obj._queryset.filter(role__title='讲师')
 

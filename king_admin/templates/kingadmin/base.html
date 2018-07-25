@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 {% load staticfiles %}
 
 <head>
@@ -11,11 +12,8 @@
     <meta name="author" content="">
     <link rel="icon" href="https://v3.bootcss.com/favicon.ico">
     <title>KingAdmin</title>
-    <!-- Bootstrap core CSS -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="{% static 'css/ie10-viewport-bug-workaround.css' %}" rel="stylesheet">
-    <!-- Custom styles for this template -->
     <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
     <style>
         .navbar-header{
@@ -55,7 +53,9 @@
     </style>
 
     <script src="{% static 'js/ie-emulation-modes-warning.js' %}"></script>
+
     {% block custom_css %}{% endblock %}
+
 </head>
 <body>
 

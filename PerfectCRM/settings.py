@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'pure_pagination',
     'student',
     'teacher',
-
 ]
 
 PAGINATION_SETTINGS = {

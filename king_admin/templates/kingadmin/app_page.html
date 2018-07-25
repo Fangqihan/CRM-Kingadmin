@@ -36,7 +36,7 @@ a:link{
                 <li><a href="{% url 'king_admin_logout' %}">退出登录</a></li>
               {% else %}
                 <li><a href="{% url 'king_admin_login' %}">登录</a></li>
-                <li><a href="{% url 'king_admin_register' %}">注册</a></li>
+                <li><a href="{% url 'crm_register' %}">注册</a></li>
               {% endif %}
           </ul>
         </div>
@@ -58,10 +58,11 @@ a:link{
                 </thead>
 
                 <tbody>
-                    {% for model_name in models %}
+                    {% for model_name in models %} <!--循环每个model名称-->
                         <tr>
                             <td width="200px"><a href="{% url 'model_obj_list' app_name model_name %}">{{ model_name }}</a></td>
-                            <td width="200px"><a href="{% url 'add_obj' app_name model_name %}"><span class="glyphicon glyphicon-plus">增加</span></a></td>
+                            <td width="200px"><a href="{% url 'add_obj' app_name model_name %}"><span
+                                    class="glyphicon glyphicon-plus">增加</span></a></td>
                         </tr>
                     {% endfor %}
                 </tbody>

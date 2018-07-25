@@ -9,6 +9,4 @@ urlpatterns = [
     url(r'^kingadmin/', include('king_admin.urls')),
     url(r'^student/', include('student.urls')),
     url(r'^teacher/', include('teacher.urls')),
-
-    url(r'^test/', test),
 ]

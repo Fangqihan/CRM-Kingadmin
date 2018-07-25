@@ -17,7 +17,6 @@ class CustomerInfoAdmin(admin.ModelAdmin):
         """
         query_set.update(status=0)  # 更新对象的属性
 
-
 admin.site.register(models.CustomerInfo, CustomerInfoAdmin)
 
 admin.site.register(models.UserProfile)
